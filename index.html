@@ -9,10 +9,122 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>BD Paribahan</title>
   </head>
   <body>
+    <header class="mr-5 ml-5 md:mx-auto lg:ml-32 lg:mr-32 lg:mt-12">
+      <!-- Nav section -->
+      <nav class="z-50">
+        <div class="navbar bg-base-100 p-0">
+          <div class="navbar-start gap-2">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Destination</a></li>
+                <li><a href="">Search</a></li>
+              </ul>
+            </div>
+            <a href="" class="text-4xl whitespace-nowrap font-extrabold">
+              BD-Ticket
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-normal text-base">
+              <li><a href="" class="font-medium">Home</a></li>
+              <li><a href="" class="font-medium">About</a></li>
+              <li><a href="" class="font-medium">Destination</a></li>
+              <li><a href="" class="font-medium">Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn border rounded-xl border-green-500 border-opacity-40 bg-green-500 bg-opacity-10"
+            >
+              <span class="text-green-500">Bus</span>
+              <img src="/images/bus-icon.png" alt="" class="bus-icon" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner section -->
+      <section class="banner mt-8">
+        <div class="relative mx-auto">
+          <img src="/images/banner.png" alt="Banner Image" class="w-full" />
+          <div
+            class="absolute inset-0 hidden lg:flex flex-col justify-center items-center text-center text-white z-10"
+          >
+            <!-- Content to be displayed over the banner on large screens -->
+            <div class="max-w-[740px] mx-4">
+              <h1 class="text-2xl lg:text-6xl font-extrabold mb-4">
+                End-to-End Travel with <br />
+                <span class="text-green-500">BD Paribahan</span>
+              </h1>
+              <p
+                class="text-base lg:text-lg font-normal mb-6 lg:mt-4 lg:max-w-[650px]"
+              >
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a
+                streamlined.
+              </p>
+              <a
+                class="btn border rounded-xl border-green-500 font-bold border-opacity-40 text-black bg-green-500"
+              >
+                Buy Tickets
+              </a>
+            </div>
+          </div>
+          <div class="lg:hidden mt-6 justify-center items-center text-center">
+            <!-- Content to be displayed under the banner on small screens -->
+            <div class="max-w-[740px] mx-4">
+              <h1 class="text-2xl lg:text-6xl font-extrabold mb-4">
+                End-to-End Travel with <br />
+                <span class="text-green-500">BD Paribahan</span>
+              </h1>
+              <p
+                class="text-base lg:text-lg font-normal mb-6 lg:mt-4 lg:max-w-[650px]"
+              >
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a
+                streamlined.
+              </p>
+              <a
+                class="btn border rounded-xl border-green-500 font-bold border-opacity-40 text-white bg-green-500"
+              >
+                Buy Tickets
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
     <script src="scripts.js"></script>
   </body>
 </html>

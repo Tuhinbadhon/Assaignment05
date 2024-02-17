@@ -1,0 +1,16 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+header {
+  margin-top: 50px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
