@@ -28,5 +28,9 @@ function removeBackgroundByID(e) {
   const element = document.getElementById(e);
   element.classList.remove("bg-green-400");
 }
-function handleKeyEvent(e) {}
+function handleKeyEvent(e) {
+  const element = e.target.innerText;
+  document.getElementById("seat-name").innerText = element;
+  console.log(element);
+}
 document.addEventListener("click", handleKeyEvent);
