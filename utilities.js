@@ -1,11 +1,3 @@
-function hideElementByID(e) {
-  const element = document.getElementById(e);
-  element.classList.add("hidden");
-}
-function showElementByID(e) {
-  const element = document.getElementById(e);
-  element.classList.remove("hidden");
-}
 document.addEventListener("input", function () {
   const nameInput = document.getElementById("name").value.trim();
   const numberInput = document.getElementById("number").value.trim();
@@ -18,3 +10,21 @@ document.addEventListener("input", function () {
     nextButton.classList.add("hidden");
   }
 });
+
+function hideElementByID(e) {
+  const element = document.getElementById(e);
+  element.classList.add("hidden");
+}
+function showElementByID(e) {
+  const element = document.getElementById(e);
+  element.classList.remove("hidden");
+}
+
+function setBackgroundByID(e) {
+  const element = document.getElementById(e);
+  element.classList.add("bg-green-400");
+}
+function removeBackgroundByID(e) {
+  const element = document.getElementById(e);
+  element.classList.remove("bg-green-400");
+}

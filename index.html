@@ -467,15 +467,17 @@
 
             <!-- Ticket secction -->
             <div class="mx-5 lg:mx-[130px]">
-              <div class="mt-9 lg:mt-10 p-8 flex bg-white rounded-3xl">
-                <div class="border-r-2 mx-0 pr-8 border-dashed">
-                  <h3 class="mb-5 text-2xl font-semibold text-gray-900">
+              <div
+                class="mt-9 lg:mt-10 p-8 flex max-[450px]:flex-col bg-white rounded-3xl"
+              >
+                <div class="lg:border-r-2 mx-0 lg:pr-8 border-dashed">
+                  <h3 class="mb-5 lg:text-2xl font-semibold text-gray-900">
                     Select Your Seat
                   </h3>
                   <hr
                     class="mb-5 border border-dashed bg-gray-900 bg-opacity-20"
                   />
-                  <div class="flex justify-between mb-5">
+                  <div class="flex justify-between lg:mb-5">
                     <div class="flex gap-2">
                       <img src="/images/seat-gray.png" alt="" />
                       <span>Available</span>
@@ -486,12 +488,14 @@
                     </div>
                   </div>
                   <hr
-                    class="mb-5 border border-dashed bg-gray-900 bg-opacity-20"
+                    class="lg:mb-5 border border-dashed bg-gray-900 bg-opacity-20"
                   />
                   <div>
                     <div class="">
-                      <div class="mt-6 flex justify-end gap-8 my-1 w-full">
-                        <kbd class="kbd py-2 px-5 border-none"
+                      <div
+                        class="lg:mt-6 flex justify-end lg:gap-8 my-1 lg:w-full"
+                      >
+                        <kbd class="kbd py-2 px-3 lg:px-5 border-none"
                           ><img
                             src="/images/car-steering-wheel.svg"
                             class="w-6 h-6"
@@ -499,80 +503,180 @@
                         /></kbd>
                       </div>
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">A</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">A1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">A2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">A3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">A4</kbd>
+                      <kbd id="A1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >A1</kbd
+                      >
+                      <kbd id="A2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >A2</kbd
+                      >
+                      <kbd id="A3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >A3</kbd
+                      >
+                      <kbd id="A4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >A4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">B</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">B1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">B2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">B3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">B4</kbd>
+                      <kbd id="B1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >B1</kbd
+                      >
+                      <kbd id="B2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >B2</kbd
+                      >
+                      <kbd id="B3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >B3</kbd
+                      >
+                      <kbd id="B4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >B4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">C</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">C1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">C2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">C3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">C4</kbd>
+                      <kbd id="C1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >C1</kbd
+                      >
+                      <kbd id="C2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >C2</kbd
+                      >
+                      <kbd id="C3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >C3</kbd
+                      >
+                      <kbd id="C4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >C4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">D</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">D1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">D2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">D3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">D4</kbd>
+                      <kbd id="D1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >D1</kbd
+                      >
+                      <kbd id="D2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >D2</kbd
+                      >
+                      <kbd id="D3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >D3</kbd
+                      >
+                      <kbd id="D4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >D4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">E</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">E1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">E2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">E3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">E4</kbd>
+                      <kbd id="E1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >E1</kbd
+                      >
+                      <kbd id="E2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >E2</kbd
+                      >
+                      <kbd id="E3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >E3</kbd
+                      >
+                      <kbd id="E4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >E4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">F</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">F1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">F2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">F3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">F4</kbd>
+                      <kbd id="F1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >F1</kbd
+                      >
+                      <kbd id="F2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >F2</kbd
+                      >
+                      <kbd id="F3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >F3</kbd
+                      >
+                      <kbd id="F4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >F4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">G</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">G1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">G2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">G3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">G4</kbd>
+                      <kbd id="G1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >G1</kbd
+                      >
+                      <kbd id="G2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >G2</kbd
+                      >
+                      <kbd id="G3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >G3</kbd
+                      >
+                      <kbd id="G4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >G4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">H</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">H1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">H2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">H3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">H4</kbd>
+                      <kbd id="H1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >H1</kbd
+                      >
+                      <kbd id="H2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >H2</kbd
+                      >
+                      <kbd id="H3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >H3</kbd
+                      >
+                      <kbd id="H4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >H4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">I</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">I1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">I2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">I3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">I4</kbd>
+                      <kbd id="I1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >I1</kbd
+                      >
+                      <kbd id="I2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >I2</kbd
+                      >
+                      <kbd id="I3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >I3</kbd
+                      >
+                      <kbd id="I4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >I4</kbd
+                      >
                     </div>
-                    <div class="mt-6 flex justify-center gap-8 my-1 w-full">
+                    <div
+                      class="mt-6 flex justify-center lg:gap-8 gap-4 my-1 w-full"
+                    >
                       <kbd class="kbd border-none bg-white">J</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">J1</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">J2</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">J3</kbd>
-                      <kbd class="kbd py-2 px-6 border-none">J4</kbd>
+                      <kbd id="J1" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >J1</kbd
+                      >
+                      <kbd id="J2" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >J2</kbd
+                      >
+                      <kbd id="J3" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >J3</kbd
+                      >
+                      <kbd id="J4" class="kbd py-2 lg:px-6 px-4 border-none"
+                        >J4</kbd
+                      >
                     </div>
                   </div>
                 </div>
                 <!-- ticket right  -->
-                <div class="ml-8 mx-0 w-full">
+                <div class="ml-8 mx-0 max-[450px]:mt-5 w-full">
                   <h3 class="text-2xl mb-5 font-semibold text-gray-900">
                     Select Your Seat
                   </h3>
