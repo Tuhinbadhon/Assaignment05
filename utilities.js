@@ -63,7 +63,7 @@ for (const btn of allBtn) {
     }
     this.classList.add("bg-green-500");
     selectedSeat.appendChild(li);
-
+    this.classList.add("bg-green-500");
     totalPrice("total-price", parseInt(price));
 
     grandTotalPrice();
@@ -76,29 +76,26 @@ function totalPrice(id, value) {
 
   const convertedPrice = parseInt(totalPrice);
   const sum = convertedPrice + parseInt(value);
-  setInnerText(id, sum);
+  setInnerText("total-price", sum);
 }
-function grandTotalPrice() {
+function grandTotalPrice(status) {
   const totalPrice = document.getElementById("total-price").innerText;
-  const convertedPrice = parseInt(totalPrice);
-  const couponInput = document.getElementById("coupon-input");
-  const applyButton = document.getElementById("apply-button");
-  applyButton.addEventListener("click", function () {
-    const enteredCoupon = couponInput.value;
-    if (enteredCoupon === "NEW15") {
-      let discount = totalPrice * 0.15;
-      let payment = convertedPrice - discount;
-      setInnerText("grand-total", payment);
-      alert("Coupon applied successfully!");
-    } else if (enteredCoupon === "Couple 20") {
-      let discount = totalPrice * 0.2;
-      let payment = convertedPrice - discount;
-      setInnerText("grand-total", payment);
-      alert("Coupon applied successfully!");
+  const convertTotalCost = parseInt(totalPrice);
+  if (status == undefined) {
+    document.getElementById("grand-total").innerText = totalPrice;
+  } else {
+    const couponCode = document.getElementById("coupon-input").value;
+    if (couponCode == "NEW15") {
+      const discount = totalPrice * 0.15;
+      document.getElementById("grand-total").innerText = totalPrice - discount;
+    } else if (couponCode == "Couple 20") {
+      const discount = totalPrice * 0.2;
+      document.getElementById("grand-total").innerText = totalPrice - discount;
     } else {
-      setInnerText("grand-total", convertedPrice);
+      alert("please enter valid coupon code");
     }
-  });
+  }
+  // setInnerText("grand-total", convertTotalCost);
 }
 
 function setInnerText(id, value) {
